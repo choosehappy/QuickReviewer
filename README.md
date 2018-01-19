@@ -23,4 +23,22 @@ Apache, php, mysql
 6. Thats it!
 
 
+## Citing
+
+This work was developed for and used in this manuscript, please cite it!
+
+@proceeding{doi: 10.1117/12.2286717,
+author = { Paula  Toro,Germán  Corredor,Xiangxue  Wang,Viviana  Arias,Vamsidhar  Velcheti,Anant  Madabhushi,Eduardo  Romero},
+title = {Quantifying expert diagnosis variability when grading tumor-infiltrating lymphocytes},
+journal = {Proc.SPIE},
+volume = {10572},
+number = {},
+pages = {10572 - 10572 - 8},
+year = {2017},
+doi = {10.1117/12.2286717},
+URL = {http://dx.doi.org/10.1117/12.2286717},
+eprint = {}
+}
+
+
 ###### This project was entirely coded by German Corredor Prada and is hosted here with his permission
