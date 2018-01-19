@@ -1,0 +1,54 @@
+.link-button{
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+body, .page-header .navbar-fixed-top{
+	background-color:#485560;
+}
+
+.copyright{
+	color: #fff;
+}
+
+.disabled{
+	border: none !important;
+	cursor: default !important;
+}
+
+.page-header .navbar .navbar-nav .dropdown-menu > li > a{
+	color: #444;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.dropdown-menu > li > a > [class^="fa-"], .dropdown-menu > li > a > [class*=" fa-"]{
+	color: #444;
+}
+
+.date{
+	color: #34495e !important;
+}
+
+.list-check{
+    color: green;
+}
+.list-close{
+    color: red;
+}
+.list-minus{
+    color: gray;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: #CEDBFF;
+}
+
+.view-tool{
+    color: white;
+}
+
+.locked-link{
+    pointer-events:none;
+}
+
