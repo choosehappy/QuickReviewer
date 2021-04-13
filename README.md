@@ -27,18 +27,19 @@ Apache, php, mysql
 
 This work was developed for and used in this manuscript, please cite it!
 
-    @proceeding{doi: 10.1117/12.2286717,
-        author = { Paula  Toro,Germán  Corredor,Xiangxue  Wang,Viviana  Arias,Vamsidhar  Velcheti,Anant  Madabhushi,Eduardo  Romero},
-        title = {Quantifying expert diagnosis variability when grading tumor-infiltrating lymphocytes},
-        journal = {Proc.SPIE},
-        volume = {10572},
-        number = {},
-        pages = {10572 - 10572 - 8},
-        year = {2017},
-        doi = {10.1117/12.2286717},
-        URL = {http://dx.doi.org/10.1117/12.2286717},
-        eprint = {}
-    }
+    @article {Corredor1526,
+	author = {Corredor, Germ{\'a}n and Wang, Xiangxue and Zhou, Yu and Lu, Cheng and Fu, Pingfu and Syrigos, Konstantinos and Rimm, David L. and Yang, Michael and Romero, Eduardo and Schalper, Kurt A. and Velcheti, Vamsidhar and Madabhushi, Anant},
+	title = {Spatial Architecture and Arrangement of Tumor-Infiltrating Lymphocytes for Predicting Likelihood of Recurrence in Early-Stage Non{\textendash}Small Cell Lung Cancer},
+	volume = {25},
+	number = {5},
+	pages = {1526--1534},
+	year = {2019},
+	doi = {10.1158/1078-0432.CCR-18-2013},
+	publisher = {American Association for Cancer Research},
+	issn = {1078-0432},
+	URL = {https://clincancerres.aacrjournals.org/content/25/5/1526},
+	eprint = {https://clincancerres.aacrjournals.org/content/25/5/1526.full.pdf},
+	journal = {Clinical Cancer Research} }
 
 
 ###### This project was entirely coded by German Corredor Prada and is hosted here with his permission
