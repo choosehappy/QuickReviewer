@@ -33,7 +33,7 @@ if ($imgName == "") {
     ?>
 
                                                     <!--<p>Por favor seleccione el grado de infiltración de la siguiente imagen:</p>-->
-    <p>Please select the grade of <strong>Tumor-infiltrating lymphocytes</strong> for the following image:</p>
+    <p>Please select the grade of <strong>CNB tortuosity</strong> for the following image:</p>
 
     <div class="row">
         <div class="col-md-12">
