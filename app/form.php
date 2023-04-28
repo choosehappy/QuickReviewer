@@ -37,10 +37,14 @@ if ($imgName == "") {
 
     <div class="row">
         <div class="col-md-12">
-            <a href="func/diagnostics.php?val=0&img=<?php echo $imgId ?>" class="btn blue-madison">0% (None)</a>
-            <a href="func/diagnostics.php?val=1&img=<?php echo $imgId ?>" class="btn blue-madison">1% - 33% (Low)</a>
-            <a href="func/diagnostics.php?val=2&img=<?php echo $imgId ?>" class="btn blue-madison">34% - 66% (Medium)</a>            
-            <a href="func/diagnostics.php?val=3&img=<?php echo $imgId ?>" class="btn blue-madison">67% - 100% (High)</a>
+            <a href="func/diagnostics.php?val=1&img=<?php echo $imgId ?>" class="btn blue-madison" onclick="setLink(this)">Low Tortuosity</a>
+            <a href="func/diagnostics.php?val=2&img=<?php echo $imgId ?>" class="btn blue-madison" onclick="setLink(this)">Medium Tortuosity</a>            
+            <a href="func/diagnostics.php?val=3&img=<?php echo $imgId ?>" class="btn blue-madison" onclick="setLink(this)">High Tortuosity</a>
+            <script>
+                function setLink(link) {
+                    link.href = link.href + '&timespan=' + document.getElementById('timer').innerHTML.replace(' seconds', '');
+                }
+            </script>
 
             <p><?php 
                 $txt='Image '.$imgId.' of '.$num;
@@ -61,8 +65,17 @@ if ($imgName == "") {
             <img width="100%" src="resources/<?php echo $imgName ?>" />
         </div>  
         <div class="col-md-3">
+        <span id="timer">0 seconds</span>
 
-
+        <script>
+            var timer = document.getElementById("timer");
+            var seconds = 0;
+            setInterval(function() {
+                seconds++;
+                timer.textContent = seconds + " seconds";
+            }, 1000);
+        </script>
+                    
             <div class="portlet box blue-madison">
                 <div class="portlet-title">
                     <div class="caption"><i class="fa fa-image"></i>Image list</div>
