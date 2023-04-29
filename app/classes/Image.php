@@ -57,13 +57,13 @@ class Image {
         return $database->fetchArray($res)[0];
     }
 
-    public function registerValue($usrId, $imgId, $val) {
+    public function registerValue($usrId, $imgId, $val, $timespan) {
         global $database;
         $res = $database->query("SELECT id_img FROM img_usr WHERE id_user=$usrId AND id_img=$imgId;");
         if ($database->getNumRows($res) == 0) {
-            return $database->query("INSERT INTO img_usr VALUES($usrId,$imgId,$val)");
+            return $database->query("INSERT INTO img_usr VALUES($usrId,$imgId,$val,$timespan)");
         } else {
-            return $database->query("UPDATE img_usr SET val=$val "
+            return $database->query("UPDATE img_usr SET val=$val, timespan=$timespan "
                             . "WHERE id_user=$usrId AND id_img=$imgId;");
         }
     }
